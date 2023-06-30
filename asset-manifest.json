@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kastha/static/css/main.11e8ee58.css",
+    "main.js": "/kastha/static/js/main.3f085fb1.js",
+    "static/media/about-bg.jpg": "/kastha/static/media/about-bg.c9d4a7658ef84fb8b5b7.jpg",
+    "index.html": "/kastha/index.html",
+    "main.11e8ee58.css.map": "/kastha/static/css/main.11e8ee58.css.map",
+    "main.3f085fb1.js.map": "/kastha/static/js/main.3f085fb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11e8ee58.css",
+    "static/js/main.3f085fb1.js"
+  ]
+}
