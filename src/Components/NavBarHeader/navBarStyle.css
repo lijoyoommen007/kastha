@@ -1,0 +1,31 @@
+.navbar-brand{
+  font-size: 2rem;
+  color: #cda45e;
+  &:hover{
+    color: white;
+  }
+}
+
+.nav-link{
+  font-size: 1rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  &:hover{
+    color: #cda45e;
+  }
+}
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item{
+  &:hover{
+    background-color: #cda45e;
+  }
+}
+.nav-item{
+  padding-left: 2rem;
+}

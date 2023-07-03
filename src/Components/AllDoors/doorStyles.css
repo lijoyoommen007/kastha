@@ -7,60 +7,87 @@
     cursor: pointer;
     }
     .item {
-    margin-bottom:30px;
+      margin-bottom: 30px;
     }
     
     .item .box {
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 380px;
-        position: relative;
-        overflow: hidden;
-        width: 230px;
-        transition: transform 0.3s ease;
-        border-radius: 1rem;
-      }
-      
-      .item .box:hover {
-        transform: scale(1.1);
-        border: 0.5px #ffc1076e solid;
-    
-      }
-      
-    
-    .item .cover {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color:rgba(0, 0, 0, 0.612);
-    transition:opacity 0.3s ease-in;
-    opacity:0;
-    padding-top:40px;
-    color:#fff;
-    text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 380px;
+      position: relative;
+      overflow: hidden;
+      width: 230px;
+      transition: transform 0.3s ease;
     }
     
-    .item:hover .cover {
-    opacity:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .item .box:hover {
+      transform: scale(1.1);
+      border: 0.5px #ffc1076e solid;
+    }
+    
+    .item .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.3s ease-in;
+      opacity: 1;
+      padding: 20px;
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .item .cover:hover{
+      background-color: rgba(0, 0, 0, 0.373);
+
+    }
+    
+    .item:hover .title {
+      opacity: 1;
+      transform: translateY(-5%);
+      transition: opacity 0.3s ease-in, transform 0.3s ease-in;
     }
     
     .item .name {
-    font-weight:bold;
-    margin-bottom:8px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.46);
+      width: 100%;
+      padding: 5px;
+    }
+
+    .item .hoverName{
+      font-weight: bold;
+      margin-bottom: 8px;
+      opacity: 0;
+    }
+    .item:hover .hoverName{
+      opacity: 1;
+      transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+
+    } 
+
+
+    .item:hover .name{
+      display: none;
     }
     
     .item .title {
-    color:white;
-    font-size:13px;
-    margin-bottom:20px;
+      opacity: 0;
+      color: white;
+      font-size: 13px;
+      margin-bottom: 20px;
+      transition: opacity 0.3s ease-in;
+
     }
+    
     
     .social {
     font-size:18px;
@@ -102,3 +129,9 @@
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+      .fluid-background {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      

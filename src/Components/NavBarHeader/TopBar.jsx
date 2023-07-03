@@ -1,8 +1,9 @@
 import React from 'react'
+import "./navBarStyle.css"
 
 function TopBar() {
   return (
-    <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div id="topbar" class="d-flex align-items-center ">
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info d-flex align-items-center">

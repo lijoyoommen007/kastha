@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide, Zoom } from 'react-awesome-reveal';
 
 function WhyUsSection() {
   const jsonData = [
@@ -27,18 +28,21 @@ function WhyUsSection() {
   return (
     <section id="why-us" className="why-us">
       <div className="container" data-aos="fade-up">
+        <Slide direction='left'>
         <div className="section-title">
           <h2>Why Us</h2>
           <p>Why Choose KASTHA</p>
         </div>
-
+        </Slide>
         <div className="row">
           {jsonData.map((item) => (
             <div className="col-lg-3 mt-3 mt-lg-0" key={item.id}>
               <div className="box" data-aos="zoom-in" data-aos-delay="100">
+                <Zoom>
                 <span>{item.id.toString().padStart(2, '0')}</span>
                 <h4>{item.title}</h4>
                 <p>{item.description}</p>
+                </Zoom>
               </div>
             </div>
           ))}

@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "swiper/css/autoplay";
+import { Zoom } from 'react-awesome-reveal';
 
 function TestimonialsSection() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function TestimonialsSection() {
   SwiperCore.use([Pagination,Autoplay]);
 
   return (
+    <Zoom>
     <section id="testimonials" className="testimonials section-bg">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
@@ -63,6 +65,7 @@ function TestimonialsSection() {
         </Swiper>
       </div>
     </section>
+    </Zoom>
   );
 }
 

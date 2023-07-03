@@ -6,6 +6,7 @@ import SpecialsSection from '../Components/SpecialServices/SpecialServices'
 import TestimonialsSection from '../Components/Testimonials/Testimonials'
 import Gallery from '../Components/Gallery/Gallery'
 import ContactUs from '../Components/ContactUs/ContactUs'
+import ClientSection from '../Components/OurClients/OurClients'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     <WhyUsSection/>
     <SpecialsSection/>
     <TestimonialsSection/>
+    <ClientSection/>
     <Gallery/>
     <ContactUs/>
     </>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import  "./gallaryStyle.css"
+import { Zoom } from "react-awesome-reveal";
+
 const jsonData = [
     {
       imageUrl: "/img/gallery/gallery-1.jpg",
@@ -41,13 +43,17 @@ const jsonData = [
   
     return (
       <section id="gallery" className="gallery">
+        <Zoom>
+
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>Gallery</h2>
             <p>Some photos from Our Restaurant</p>
           </div>
         </div>
-  
+        </Zoom>
+        <Zoom>
+
         <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
           <div className="row g-0 d-flex justify-content-center">
             {jsonData.map((item, index) => (
@@ -69,7 +75,7 @@ const jsonData = [
             ))}
           </div>
         </div>
-  
+        </Zoom>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}

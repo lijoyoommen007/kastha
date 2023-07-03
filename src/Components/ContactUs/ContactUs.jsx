@@ -1,7 +1,9 @@
 import React from 'react';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 const ContactSection = () => {
   return (
+    <Zoom>
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
@@ -116,6 +118,7 @@ const ContactSection = () => {
         </div>
       </div>
     </section>
+    </Zoom>
   );
 };
 
