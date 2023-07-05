@@ -1,10 +1,12 @@
 import React from 'react';
 import "./doorStyles.css";
 import { Fade, Slide, Zoom } from 'react-awesome-reveal';
+import BackgroundAnimation from './background';
 
 function Doors({ data }) {
   return (
     <>
+    <BackgroundAnimation/>
      <Fade triggerOnce>
         <section style={{ width: "100vw", padding: "0px 0", position: "relative" }}>
           <div style={{ position: "relative" }}>
